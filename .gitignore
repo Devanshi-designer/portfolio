@@ -1,32 +1,38 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
-
-# Configuration
+# ========================
+# Sensitive files
+# ========================
 wp-config.php
 
-# Example themes
-/wp-content/themes/twenty*/
+# ========================
+# Uploads (media)
+# ========================
+wp-content/uploads/
 
-# Example plugin
-/wp-content/plugins/hello.php
-
-# Uploads
-/wp-content/uploads/
-
-# Log files
+# ========================
+# Cache / backups / temp
+# ========================
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
 *.log
 
-# htaccess
-/.htaccess
+# ========================
+# Default WordPress themes
+# ========================
+wp-content/themes/twentytwenty*
+wp-content/themes/twentyseventeen
+wp-content/themes/twentysixteen
+wp-content/themes/twentyfifteen
+wp-content/themes/twentyfourteen
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
+# ========================
+# Default plugins
+# ========================
+wp-content/plugins/akismet/
+wp-content/plugins/hello.php
 
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# ========================
+# OS files
+# ========================
+.DS_Store
+Thumbs.db
